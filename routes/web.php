@@ -12,10 +12,9 @@
 */
 
 Route::get('test', function(){
-    $name = request('name');
 
     return view('test',[
-        'name' => $name
+        'name' => request('name')
     ]);
 });
 

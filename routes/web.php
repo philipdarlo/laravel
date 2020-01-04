@@ -22,6 +22,7 @@ Route::get('/', function(){
     return view('welcome');
 });
 
+/*
 Route::get('/posts/{post}', function($post){
     $posts = [
         'my-first-post' => 'Hello, this is my first post!',
@@ -36,3 +37,6 @@ Route::get('/posts/{post}', function($post){
         'post' => $posts[$post]
     ]);
 });
+*/
+
+Route::get('/posts/{post}', 'PostsController@show');

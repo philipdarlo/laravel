@@ -40,3 +40,7 @@ Route::get('/posts/{post}', function($post){
 */
 
 Route::get('/posts/{post}', 'PostsController@show');
+
+Route::get('/contact', function(){
+    return view('contact');
+});
